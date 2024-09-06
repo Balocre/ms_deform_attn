@@ -1,0 +1,20 @@
+[build-system]
+requires = [
+    "setuptools",
+    "torch>=2.4.0",
+    "numpy"
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src/"]
+
+[project]
+name = "ms_deform_attn"
+version = "0.0.0"
+description = "PyTorch Wrapper for CUDA Functions of Multi-Scale Deformable Attention"
+authors = [
+    {name = "Weijie Su"}, 
+    {name = "Antoine Audras", email = "antoine.audras@exotec.com"}
+]
+dependencies = ["torch>=2.4.0"]
